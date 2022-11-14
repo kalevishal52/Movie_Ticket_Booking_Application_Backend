@@ -24,8 +24,6 @@ public class UserController {
 	@Autowired
 	private UserService userService ;
 	
-//	@Autowired
-//	private SendEmail sendEmail;
 	
 	@PostMapping("/users")
 	public ResponseEntity<User> registerUserHandler(@Valid @RequestBody User user) throws UserException {
@@ -53,12 +51,7 @@ public class UserController {
 		return new ResponseEntity<User>(updatedUser,HttpStatus.CREATED) ;
 	}
 	
-	@GetMapping("/testEmail")
-	public String testing() {
-		SendEmail emial = new SendEmail();
-		System.out.println("_______");
-		return null;
-	}
+	
 	
 }
 
