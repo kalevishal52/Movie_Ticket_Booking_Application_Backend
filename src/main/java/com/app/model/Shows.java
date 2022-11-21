@@ -22,6 +22,7 @@ import lombok.NoArgsConstructor;
 @Entity
 public class Shows {
 	
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer showId;

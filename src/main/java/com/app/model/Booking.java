@@ -26,10 +26,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Booking {
 	
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer bookingId;
 	private Integer userId;
+	
 	
 	@ManyToOne(cascade = CascadeType.ALL)
 	private Shows shows;

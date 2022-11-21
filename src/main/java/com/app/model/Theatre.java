@@ -44,7 +44,6 @@ public class Theatre {
 	private List<Screen> screens = new ArrayList<>();
 	
 
-
 }
 
 

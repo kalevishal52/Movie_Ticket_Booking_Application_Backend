@@ -19,9 +19,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class UserSession {
 
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer userId;
+	
 	
 	private String uuid;
 	private LocalDateTime timeStamp;
